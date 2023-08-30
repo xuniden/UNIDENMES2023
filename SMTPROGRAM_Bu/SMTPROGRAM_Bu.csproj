@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44B864B5-7FF2-4AF3-B557-F370AFA994FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMTPROGRAM_Bu</RootNamespace>
+    <AssemblyName>SMTPROGRAM_Bu</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssyOperatorProcess_Services.cs" />
+    <Compile Include="Assy_Services.cs" />
+    <Compile Include="A_EastechEBChecker_Services.cs" />
+    <Compile Include="BoxET\boxETManage_Service.cs" />
+    <Compile Include="BoxET\boxIssueManage_Service.cs" />
+    <Compile Include="BoxET\boxReturnManage_Service.cs" />
+    <Compile Include="Common_ClassBu.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="EastechHistory_Services.cs" />
+    <Compile Include="EastechOutputHistory_Services.cs" />
+    <Compile Include="General_Serial_Services.cs" />
+    <Compile Include="GetServerDateTime_Services.cs" />
+    <Compile Include="Insert_Program_Services.cs" />
+    <Compile Include="Ins_Eas_History_Services.cs" />
+    <Compile Include="Ins_Eas_Program_History_Services.cs" />
+    <Compile Include="Item_Master_Services.cs" />
+    <Compile Include="LOGINHISTORYService.cs" />
+    <Compile Include="ModelName_Services.cs" />
+    <Compile Include="PcbType_Services.cs" />
+    <Compile Include="Pcb_Code_Services.cs" />
+    <Compile Include="PROGRAMHISTORYService.cs" />
+    <Compile Include="PROGRAMService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionLogin_Services.cs" />
+    <Compile Include="Smt_Linename_Services.cs" />
+    <Compile Include="Smt_Line_Services.cs" />
+    <Compile Include="Smt_Repair_Result_Services.cs" />
+    <Compile Include="Smt_Repair_Services.cs" />
+    <Compile Include="USERService.cs" />
+    <Compile Include="uvmodelinfoDAO.cs" />
+    <Compile Include="Uv_Department_Services.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMTPROGRAM_Da\SMTPROGRAM_Da.csproj">
+      <Project>{34b5d498-49ef-4ac1-ab99-2a8da0f7c91b}</Project>
+      <Name>SMTPROGRAM_Da</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

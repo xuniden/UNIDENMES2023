@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34B5D498-49EF-4AC1-AB99-2A8DA0F7C91B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMTPROGRAM_Da</RootNamespace>
+    <AssemblyName>SMTPROGRAM_Da</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssyOperatorProcess_Controller.cs" />
+    <Compile Include="AssyOperatorProcess_Info.cs" />
+    <Compile Include="Assy_Controller.cs" />
+    <Compile Include="Assy_Info.cs" />
+    <Compile Include="A_EastechEBChecker_Controller.cs" />
+    <Compile Include="A_EastechEBChecker_Info.cs" />
+    <Compile Include="BoxET\boxETManage.cs" />
+    <Compile Include="BoxET\boxETManage_Control.cs" />
+    <Compile Include="BoxET\boxIssueManage.cs" />
+    <Compile Include="BoxET\boxIssueManage_Control.cs" />
+    <Compile Include="BoxET\boxReturnManage.cs" />
+    <Compile Include="BoxET\boxReturnManage_Control.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Common_ClassDA.cs" />
+    <Compile Include="EastechHistory_Controller.cs" />
+    <Compile Include="EastechHistory_Info.cs" />
+    <Compile Include="EastechOutputHistory_Controller.cs" />
+    <Compile Include="EastechOutputHistory_Info.cs" />
+    <Compile Include="General_Serial_Controller.cs" />
+    <Compile Include="General_Serial_Info.cs" />
+    <Compile Include="GetServerDateTime.cs" />
+    <Compile Include="Insert_Program_Controller.cs" />
+    <Compile Include="Insert_Program_Info.cs" />
+    <Compile Include="Ins_Eas_History_Controller.cs" />
+    <Compile Include="Ins_Eas_History_Info.cs" />
+    <Compile Include="Ins_Eas_Program_History_Controller.cs" />
+    <Compile Include="Ins_Eas_Program_History_Info.cs" />
+    <Compile Include="Item_Master_Controll.cs" />
+    <Compile Include="Item_Master_Info.cs" />
+    <Compile Include="LOGINHISTORYController.cs" />
+    <Compile Include="LOGINHISTORYInfo.cs" />
+    <Compile Include="ModelName_Controller.cs" />
+    <Compile Include="ModelName_Info.cs" />
+    <Compile Include="PcbType_Controller.cs" />
+    <Compile Include="PcbType_Info.cs" />
+    <Compile Include="Pcb_Code_Controller.cs" />
+    <Compile Include="Pcb_Code_Info.cs" />
+    <Compile Include="PROGRAMController.cs" />
+    <Compile Include="PROGRAMHISTORYController.cs" />
+    <Compile Include="PROGRAMHISTORYInfo.cs" />
+    <Compile Include="PROGRAMInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionLogin_Controller.cs" />
+    <Compile Include="SessionLogin_Info.cs" />
+    <Compile Include="SmtDTO\AOI\LeadeApprove.cs" />
+    <Compile Include="Smt_Line_Controller.cs" />
+    <Compile Include="Smt_Line_Info.cs" />
+    <Compile Include="Smt_Repair_Controller.cs" />
+    <Compile Include="Smt_Repair_Info.cs" />
+    <Compile Include="Smt_Repair_Result_Controller.cs" />
+    <Compile Include="Smt_Repair_Result_Info.cs" />
+    <Compile Include="SqlDataProvider.cs" />
+    <Compile Include="UserController.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UVMODELINFO.cs" />
+    <Compile Include="Uv_Department_Controller.cs" />
+    <Compile Include="Uv_Department_Info.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

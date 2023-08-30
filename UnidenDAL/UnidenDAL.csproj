@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E044FE85-003D-4585-9889-66C857FBB383}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnidenDAL</RootNamespace>
+    <AssemblyName>UnidenDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssyLine\ETASSY\EASTECHPCBCODE_DAL.cs" />
+    <Compile Include="AssyLine\ETASSY\EASTECHQRWIRELESS_DAL.cs" />
+    <Compile Include="AssyLine\ETASSY\EASTECHSERIALGENERAL_DAL.cs" />
+    <Compile Include="AssyLine\MENU\CBSAVEDATA_DAL.cs" />
+    <Compile Include="AssyLine\MENU\COM21_DAL.cs" />
+    <Compile Include="AssyLine\MENU\EASTECHHISTORY_DALL.cs" />
+    <Compile Include="AssyLine\MENU\PCBTYPE_DAL.cs" />
+    <Compile Include="AssyLine\MENU\QRCODELABEL_DAL.cs" />
+    <Compile Include="AssyLine\MENU\REPAIRHISTORY_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\CAUSECODEREPAIR_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\REPAIRKEYIN_DAL.cs" />
+    <Compile Include="AssyLine\UG\BCARDDATA_DAL.cs" />
+    <Compile Include="AssyLine\UG\COM2_DAL.cs" />
+    <Compile Include="AssyLine\UG\LOTCONTROL_DAL.cs" />
+    <Compile Include="AssyLine\MENU\MODEL_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\REPAIRMODEL_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\REPAIRGENERALCODE_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\ERRORCODE_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\CAUSECODE_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\DEFECTCODE_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\DEPTCODE_DAL.cs" />
+    <Compile Include="AssyLine\REPAIR\REASONCODE_DAL.cs" />
+    <Compile Include="AssyLine\UG\COM1_DAL.cs" />
+    <Compile Include="AssyLine\VIEW\IMPORTQRCODE_DAL.cs" />
+    <Compile Include="AssyLine\VIEW\PRINTQRCODE_DAL.cs" />
+    <Compile Include="Assy\DELETEBARCODE_DAL.cs" />
+    <Compile Include="Assy\ET\A_OperatorProcessDataDAL.cs" />
+    <Compile Include="Assy\LINEERRORRECORD_DAL.cs" />
+    <Compile Include="Assy\LINEPROCESSHISTORY_DAL.cs" />
+    <Compile Include="Assy\LINEPROCESSNONHISTORY_DAL.cs" />
+    <Compile Include="Assy\LINEREPAIRHISTORY_DAL.cs" />
+    <Compile Include="Assy\QRCODELINKVSLINECODE_DAL.cs" />
+    <Compile Include="Assy\Setup\GROUP_PROCESS_DAL.cs" />
+    <Compile Include="Assy\Setup\LINECAUSECODE_DAL.cs" />
+    <Compile Include="Assy\Setup\LINECAUSEDEPT_DAL.cs" />
+    <Compile Include="Assy\Setup\LINEERRORCODE_DAL.cs" />
+    <Compile Include="Assy\Setup\LINEPROCESS_DAL.cs" />
+    <Compile Include="EZioApi.cs" />
+    <Compile Include="GodexPrinter.cs" />
+    <Compile Include="Jig\JIGCALHISTORY_DAL.cs" />
+    <Compile Include="Jig\JIGREPAIRHISTORY_DAL.cs" />
+    <Compile Include="Jig\JIG\JIGHCALDEVICES_DAL.cs" />
+    <Compile Include="Jig\JIG\JIGHINOUT_DAL.cs" />
+    <Compile Include="Jig\JIG\JIGHLOCATION_DAL.cs" />
+    <Compile Include="Jig\JIG\JIGHREPAIRE_DAL.cs" />
+    <Compile Include="RandomDAL.cs" />
+    <Compile Include="Smt\DataControl\EASTECH_ERROR_LOG_APPROVE_DAL.cs" />
+    <Compile Include="Smt\DataControl\SMT_AOI_ERROR_RECORD_DAL.cs" />
+    <Compile Include="Smt\Input\EASTECH_PROGRAMHISTORY_DAL.cs" />
+    <Compile Include="Smt\Input\PROGRAMHISTORY_DAL.cs" />
+    <Compile Include="Smt\Input\UV_SMT_STD_OP_HISTORY_DAL.cs" />
+    <Compile Include="Smt\Output\EastechPCBCode_DAL.cs" />
+    <Compile Include="Smt\Repair\SmtRepairErrorCode_DAL.cs" />
+    <Compile Include="SysControl\Setup\EstechSerialGeneral_DAL.cs" />
+    <Compile Include="SysControl\Setup\MODELLOTINFO_DAL.cs" />
+    <Compile Include="AssyLine\MENU\CBSETTING_DAL.cs" />
+    <Compile Include="BoxET\Box_ETManagerDAL.cs" />
+    <Compile Include="CommonDAL.cs" />
+    <Compile Include="GlobalTransaction.cs" />
+    <Compile Include="Jig\JIGCALDEVICES_DAL.cs" />
+    <Compile Include="Jig\jigCalNewDAL.cs" />
+    <Compile Include="Jig\JIGCALTYPE_DAL.cs" />
+    <Compile Include="Jig\JIGINOUT_DAL.cs" />
+    <Compile Include="Jig\JIGLOCATION_DAL.cs" />
+    <Compile Include="Jig\JIGSECTION_DAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Smt\DataControl\SmtEtProgramHistoryDAL.cs" />
+    <Compile Include="Smt\DataControl\SmtGeneralQrCodeDAL.cs" />
+    <Compile Include="Smt\DataControl\SmtLineDAL.cs" />
+    <Compile Include="Smt\DataControl\SmtProgramDAL.cs" />
+    <Compile Include="Smt\DataControl\SmtProgramHistoryDAL.cs" />
+    <Compile Include="Smt\DataControl\SmtProgramHistoryNewDAL.cs" />
+    <Compile Include="Smt\DataControl\SmtSetupPcbCodeDAL.cs" />
+    <Compile Include="Smt\DataControl\SmtUploadBomDAL.cs" />
+    <Compile Include="Smt\Output\LeaderApproveDAL.cs" />
+    <Compile Include="Smt\Output\SmtAOIQrCodeOutputDAL.cs" />
+    <Compile Include="Smt\OutsourceBom\OUTSOURCE_ET_BOM_DAL.cs" />
+    <Compile Include="Smt\OutsourceBom\OUTSOURCE_UVLotVsETOrderDAL.cs" />
+    <Compile Include="Smt\OutsourceBom\OUTSOURCE_UVPartsVsETPartsDAL.cs" />
+    <Compile Include="Smt\OutsourceBom\OUTSOURCE_UV_BOM_DAL.cs" />
+    <Compile Include="Smt\OutSource\SMT_OUTPUT_MIS_MATERIALDAL.cs" />
+    <Compile Include="Smt\OutSource\SMT_OUTSOURCE_IN_QTYDAL.cs" />
+    <Compile Include="Smt\OutSource\SMT_OUTSOURCE_ORDER_IMPORTDAL.cs" />
+    <Compile Include="Smt\OutSource\SMT_OUTSOURCE_OUTHISTORYDAL.cs" />
+    <Compile Include="Smt\OutSource\SMT_OUTSOURCE_OUTPUTDAL.cs" />
+    <Compile Include="Staging\UVInputDAL.cs" />
+    <Compile Include="Staging\UVLocationDAL.cs" />
+    <Compile Include="Staging\UVOutPutDAL.cs" />
+    <Compile Include="Staging\UVPcbListDAL.cs" />
+    <Compile Include="Staging\UVProLineDAL.cs" />
+    <Compile Include="SysControl\IT\ITDevicesManagement_DAL.cs" />
+    <Compile Include="SysControl\IT\ITDevicesType_DAL.cs" />
+    <Compile Include="SysControl\IT\IT_BuyDeviceMonitorDAL.cs" />
+    <Compile Include="SysControl\IT\IT_DevicesTransactionDAL.cs" />
+    <Compile Include="SysControl\SessionLoginDAL.cs" />
+    <Compile Include="SysControl\Setup\FACTORY_DAL.cs" />
+    <Compile Include="SysControl\Setup\PcbType_DAL.cs" />
+    <Compile Include="SysControl\Setup\QRCODEMANAGEMENT_DAL.cs" />
+    <Compile Include="SysControl\SYSButtonDAL.cs" />
+    <Compile Include="SysControl\SYSButtonFunctionDAL.cs" />
+    <Compile Include="SysControl\SYSMenuDAL.cs" />
+    <Compile Include="SysControl\SYSUserDAL.cs" />
+    <Compile Include="SysControl\SYSUserMenuFuctionDAL.cs" />
+    <Compile Include="SysControl\UVDeptDAL.cs" />
+    <Compile Include="SysControl\UVDivDAL.cs" />
+    <Compile Include="Whs\WHSInputIqcReturnDAL.cs" />
+    <Compile Include="Whs\WHSIqcInputReturnResultDAL.cs" />
+    <Compile Include="Whs\WHSLocationDAL.cs" />
+    <Compile Include="Whs\WHSMonitorFedexDhlOtherDAL.cs" />
+    <Compile Include="Whs\WHSPoErrorAndKeyinDAL.cs" />
+    <Compile Include="Whs\WHSReceivingInputDAL.cs" />
+    <Compile Include="Whs\WHSTransferLottagDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMTPROGRAM_Da\SMTPROGRAM_Da.csproj">
+      <Project>{34b5d498-49ef-4ac1-ab99-2a8da0f7c91b}</Project>
+      <Name>SMTPROGRAM_Da</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnidenDTO\UnidenDTO.csproj">
+      <Project>{fc122ac0-f528-4d91-8c8c-e237b088c0b5}</Project>
+      <Name>UnidenDTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EZio32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assy\Report\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

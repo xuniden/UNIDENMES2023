@@ -1,0 +1,231 @@
+﻿namespace SMTPRORAM.AssyLine.MENU
+{
+	partial class frmUpdateBatch
+	{
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		private System.ComponentModel.IContainer components = null;
+
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		protected override void Dispose(bool disposing)
+		{
+			if (disposing && (components != null))
+			{
+				components.Dispose();
+			}
+			base.Dispose(disposing);
+		}
+
+		#region Windows Form Designer generated code
+
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			this.panelLeft = new System.Windows.Forms.Panel();
+			this.cbSelect = new System.Windows.Forms.ComboBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.rtDefect = new System.Windows.Forms.RichTextBox();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txtBatch = new System.Windows.Forms.TextBox();
+			this.label1 = new System.Windows.Forms.Label();
+			this.txtLot = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.panelContent = new System.Windows.Forms.Panel();
+			this.btUpdate = new System.Windows.Forms.Button();
+			this.dgView = new System.Windows.Forms.DataGridView();
+			this.panelLeft.SuspendLayout();
+			this.panelContent.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgView)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// panelLeft
+			// 
+			this.panelLeft.Controls.Add(this.btUpdate);
+			this.panelLeft.Controls.Add(this.cbSelect);
+			this.panelLeft.Controls.Add(this.label5);
+			this.panelLeft.Controls.Add(this.rtDefect);
+			this.panelLeft.Controls.Add(this.label3);
+			this.panelLeft.Controls.Add(this.label2);
+			this.panelLeft.Controls.Add(this.txtBatch);
+			this.panelLeft.Controls.Add(this.label1);
+			this.panelLeft.Controls.Add(this.txtLot);
+			this.panelLeft.Controls.Add(this.label4);
+			this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+			this.panelLeft.Location = new System.Drawing.Point(0, 0);
+			this.panelLeft.Name = "panelLeft";
+			this.panelLeft.Size = new System.Drawing.Size(452, 561);
+			this.panelLeft.TabIndex = 0;
+			// 
+			// cbSelect
+			// 
+			this.cbSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbSelect.FormattingEnabled = true;
+			this.cbSelect.Items.AddRange(new object[] {
+            "1.CB Model",
+            "2.COM2"});
+			this.cbSelect.Location = new System.Drawing.Point(86, 69);
+			this.cbSelect.Name = "cbSelect";
+			this.cbSelect.Size = new System.Drawing.Size(221, 21);
+			this.cbSelect.TabIndex = 18;
+			this.cbSelect.SelectedIndexChanged += new System.EventHandler(this.cbSelect_SelectedIndexChanged);
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(14, 73);
+			this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(61, 13);
+			this.label5.TabIndex = 17;
+			this.label5.Text = "SELECT #:";
+			// 
+			// rtDefect
+			// 
+			this.rtDefect.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.rtDefect.Location = new System.Drawing.Point(86, 168);
+			this.rtDefect.Name = "rtDefect";
+			this.rtDefect.Size = new System.Drawing.Size(347, 101);
+			this.rtDefect.TabIndex = 16;
+			this.rtDefect.Text = "";
+			this.rtDefect.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtDefect_KeyDown);
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(14, 168);
+			this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(62, 13);
+			this.label3.TabIndex = 15;
+			this.label3.Text = "DEFECT #:";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(14, 139);
+			this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(56, 13);
+			this.label2.TabIndex = 14;
+			this.label2.Text = "BATCH #:";
+			// 
+			// txtBatch
+			// 
+			this.txtBatch.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+			this.txtBatch.Location = new System.Drawing.Point(86, 135);
+			this.txtBatch.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+			this.txtBatch.Name = "txtBatch";
+			this.txtBatch.Size = new System.Drawing.Size(221, 20);
+			this.txtBatch.TabIndex = 13;
+			this.txtBatch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtBatch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBatch_KeyDown);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(14, 105);
+			this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(41, 13);
+			this.label1.TabIndex = 12;
+			this.label1.Text = "LOT #:";
+			// 
+			// txtLot
+			// 
+			this.txtLot.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+			this.txtLot.Location = new System.Drawing.Point(86, 101);
+			this.txtLot.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+			this.txtLot.Name = "txtLot";
+			this.txtLot.Size = new System.Drawing.Size(221, 20);
+			this.txtLot.TabIndex = 11;
+			this.txtLot.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtLot.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtLot_KeyDown);
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.Blue;
+			this.label4.Location = new System.Drawing.Point(41, 9);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(373, 38);
+			this.label4.TabIndex = 9;
+			this.label4.Text = "UPDATE BATCH STATUS";
+			// 
+			// panelContent
+			// 
+			this.panelContent.Controls.Add(this.dgView);
+			this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.panelContent.Location = new System.Drawing.Point(452, 0);
+			this.panelContent.Name = "panelContent";
+			this.panelContent.Size = new System.Drawing.Size(532, 561);
+			this.panelContent.TabIndex = 1;
+			// 
+			// btUpdate
+			// 
+			this.btUpdate.Location = new System.Drawing.Point(86, 275);
+			this.btUpdate.Name = "btUpdate";
+			this.btUpdate.Size = new System.Drawing.Size(172, 55);
+			this.btUpdate.TabIndex = 19;
+			this.btUpdate.Text = "UPDATE";
+			this.btUpdate.UseVisualStyleBackColor = true;
+			this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
+			// 
+			// dgView
+			// 
+			this.dgView.AllowUserToAddRows = false;
+			this.dgView.AllowUserToDeleteRows = false;
+			this.dgView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.dgView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgView.Location = new System.Drawing.Point(6, 12);
+			this.dgView.Name = "dgView";
+			this.dgView.ReadOnly = true;
+			this.dgView.Size = new System.Drawing.Size(514, 537);
+			this.dgView.TabIndex = 0;
+			// 
+			// frmUpdateBatch
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(984, 561);
+			this.Controls.Add(this.panelContent);
+			this.Controls.Add(this.panelLeft);
+			this.Name = "frmUpdateBatch";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "CẬP NHẬT BATCH";
+			this.Load += new System.EventHandler(this.frmUpdateBatch_Load);
+			this.panelLeft.ResumeLayout(false);
+			this.panelLeft.PerformLayout();
+			this.panelContent.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dgView)).EndInit();
+			this.ResumeLayout(false);
+
+		}
+
+		#endregion
+
+		private System.Windows.Forms.Panel panelLeft;
+		private System.Windows.Forms.Panel panelContent;
+		private System.Windows.Forms.ComboBox cbSelect;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.RichTextBox rtDefect;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.TextBox txtBatch;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox txtLot;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Button btUpdate;
+		private System.Windows.Forms.DataGridView dgView;
+	}
+}

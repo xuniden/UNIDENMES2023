@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7eca229e116249b991b287584ea5a5ca" Name="Diagram1" ZoomLevel="76">
+        <EntityTypeShape EntityType="UVMESModel.A_AssyOperatorProcessSetup" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.A_ATypePcb" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.A_Eastech_Markit" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.A_EastechCheckResult" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.A_EastechEBChecker" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.A_EastechFCTCheck" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.A_EastechFCTMarkit" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.A_OperatorProcessData" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" FillColor="255, 255, 128" />
+        <EntityTypeShape EntityType="UVMESModel.AssySamsungCauseCode" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.AssySamsungDepartment" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.AssySamsungErrorCode" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.AssySamsungRepair" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.AssySamsungRepairCode" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Box_ETManager" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Box_IssueManage" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Box_ReturnManage" Width="1.5" PointX="6.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.EASTECH_PROGRAMHISTORY" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.ModelName" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.SMT_LINE" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Smt_Repair_Bom" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Smt_Repair_Cause" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Smt_Repair_Error_Code" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Smt_Repair_Result" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.Smt_Repaire_DeptCause" Width="1.5" PointX="4.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.tbl_EastechPCBCode" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.tbl_EstechSerialGeneral" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.tbl_EstechSerialGeneral_Tmp" Width="1.5" PointX="14.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.tbl_Sys_Division" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.tbl_Sys_Section" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.TBLUSER" Width="1.5" PointX="4.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.UvDepartment" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UVMESModel.SYS_ButtonFunction" Width="1.5" PointX="19.75" PointY="14.75" />
+        <EntityTypeShape EntityType="UVMESModel.SYS_MenuFunction" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="UVMESModel.SYS_UserButtonFunction" Width="1.5" PointX="21.75" PointY="3.75" />
+        <EntityTypeShape EntityType="UVMESModel.SYS_UserMenuFuction" Width="1.5" PointX="21.75" PointY="6.75" />
+        <EntityTypeShape EntityType="UVMESModel.SYS_Users" Width="1.5" PointX="20.25" PointY="21.875" />
+        <EntityTypeShape EntityType="UVMESModel.UV_DEPT" Width="1.5" PointX="18" PointY="20.5" />
+        <EntityTypeShape EntityType="UVMESModel.UV_DIV" Width="1.5" PointX="15.75" PointY="20.875" />
+        <EntityTypeShape EntityType="UVMESModel.UV_PRO_LINE" Width="1.5" PointX="20.25" PointY="19.125" />
+        <EntityTypeShape EntityType="UVMESModel.UV_STAGING_LOCATION" Width="1.5" PointX="21.75" PointY="9.75" />
+        <EntityTypeShape EntityType="UVMESModel.WHS_LOCATION" Width="1.5" PointX="23.75" PointY="26.625" />
+        <EntityTypeShape EntityType="UVMESModel.WHS_RECEIVING_INPUT" Width="1.5" PointX="20.375" PointY="26.625" />
+        <EntityTypeShape EntityType="UVMESModel.WHS_TRANSFER_LOTTAG" Width="2.25" PointX="23.75" PointY="0.75" />
+        <AssociationConnector Association="UVMESModel.FK__SYS_Users__DeptI__351DDF8C" />
+        <AssociationConnector Association="UVMESModel.FK__UV_PRO_LI__DeptI__7CD98669" />
+        <AssociationConnector Association="UVMESModel.FK_DEPT_DIV" />
+        <EntityTypeShape EntityType="UVMESModel.tbl_SessionLogin" Width="1.5" PointX="22.375" PointY="16.75" />
+        <EntityTypeShape EntityType="UVMESModel.WHS_INPUT_IQC_RETURN" Width="1.5" PointX="22.125" PointY="26.625" />
+        <EntityTypeShape EntityType="UVMESModel.WHS_IQC_INPUT_RETURN_RESULT" Width="1.5" PointX="18.625" PointY="26.625" />
+        <EntityTypeShape EntityType="UVMESModel.WHS_MONITOR_FEDEX_DHL_OTHER" Width="1.5" PointX="24.375" PointY="7.75" />
+        <EntityTypeShape EntityType="UVMESModel.WHS_PO_ERROR_KEYIN" Width="1.5" PointX="16.875" PointY="26.625" />
+        <EntityTypeShape EntityType="UVMESModel.UV_STAGING_PCBLIST" Width="1.875" PointX="3.625" PointY="21.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_STAGING_INPUT" Width="1.5" PointX="0.5" PointY="21.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_STAGING_OUTPUT" Width="1.5" PointX="2" PointY="21.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_SETUP_PROCESS" Width="1.5" PointX="0.5" PointY="25.875" />
+        <EntityTypeShape EntityType="UVMESModel.OUTSOURCE_UVLotVsETOrder" Width="1.5" PointX="0.5" PointY="32.25" />
+        <EntityTypeShape EntityType="UVMESModel.OUTSOURCE_UVPartsVsETParts" Width="1.5" PointX="3.875" PointY="32.25" />
+        <EntityTypeShape EntityType="UVMESModel.SMT_OUTSOURCE_ORDER_IMPORT" Width="2.875" PointX="10.625" PointY="31" />
+        <EntityTypeShape EntityType="UVMESModel.OUTSOURCE_ET_BOM" Width="1.5" PointX="5.5" PointY="32.25" />
+        <EntityTypeShape EntityType="UVMESModel.OUTSOURCE_UV_BOM" Width="1.5" PointX="2.25" PointY="32.25" />
+        <EntityTypeShape EntityType="UVMESModel.EASTECH_SMT_OUTPUT" Width="2.375" PointX="6.625" PointY="16.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.PROGRAM" Width="1.75" PointX="9.375" PointY="17.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.PROGRAMHISTORY" Width="1.75" PointX="11.375" PointY="21.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_SECTION" Width="1.5" PointX="29.375" PointY="16" FillColor="255, 128, 255" />
+        <AssociationConnector Association="UVMESModel.FK__JIG_SECTI__DeptI__73901351" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_LOCATION" Width="1.5" PointX="36.25" PointY="18.375" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_CALTYPE" Width="1.5" PointX="34.5" PointY="18.375" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.IT_DevicesTransaction" Width="1.5" PointX="29.875" PointY="19.75" />
+        <EntityTypeShape EntityType="UVMESModel.SMT_OUTSOURCE_OUTPUT" Width="2.125" PointX="5.5" PointY="26.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.IT_DevicesType" Width="1.5" PointX="25.375" PointY="20.375" />
+        <EntityTypeShape EntityType="UVMESModel.SMT_OUTSOURCE_IN_QTY" Width="2.125" PointX="3.25" PointY="26.625" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.IT_BuyDeviceMonitor" Width="1.5" PointX="25.625" PointY="26.125" />
+        <EntityTypeShape EntityType="UVMESModel.EASTECH_ERROR_APPROVE" Width="3.625" PointX="12.25" PointY="17.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.IT_DevicesManagement" Width="1.5" PointX="27.875" PointY="24.625" />
+        <AssociationConnector Association="UVMESModel.FK__IT_Device__NoteD__3434A84B" />
+        <AssociationConnector Association="UVMESModel.FK__IT_Device__LoaiT__7ECCBBD3" />
+        <AssociationConnector Association="UVMESModel.FK__IT_Devices__MaTB__707E9C7C" />
+        <EntityTypeShape EntityType="UVMESModel.SMT_OUTPUT_MIS_MATERIAL" Width="2.25" PointX="7.75" PointY="26.875" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_CALDEVICES" Width="2.125" PointX="31.125" PointY="9.25" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.EASTECH_ERROR_LOG_APPROVE" Width="2.875" PointX="8.375" PointY="22.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.SMT_OUTSOURCE_OUTHISTORY" Width="2.375" PointX="10" PointY="27" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.UV_FACTORY" Width="1.75" PointX="28.625" PointY="0.75" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_CALDEVICES_NEW" Width="2" PointX="28.875" PointY="9.375" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_CALHISTORY" Width="2.625" PointX="33.75" PointY="9.875" FillColor="255, 128, 255" />
+        <AssociationConnector Association="UVMESModel.FK__JIG_CALHI__Contr__135DC465" />
+        <EntityTypeShape EntityType="UVMESModel.JIGH_LOCATION" Width="2" PointX="34.5" PointY="6.375" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_INOUT" Width="1.5" PointX="38" PointY="13.25" FillColor="255, 128, 255" />
+        <AssociationConnector Association="UVMESModel.FK__JIG_INOUT__Contr__3C0AD43D" />
+        <EntityTypeShape EntityType="UVMESModel.JIGH_INOUT" Width="1.75" PointX="36.875" PointY="6.875" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.JIG_REPAIRHISTORY" Width="2" PointX="38" PointY="18" FillColor="255, 128, 255" />
+        <AssociationConnector Association="UVMESModel.FK__JIG_REPAI__Contr__49B9D516" />
+        <EntityTypeShape EntityType="UVMESModel.PcbType" Width="1.5" PointX="18.5" PointY="0.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_MODELLOTINFO" Width="1.75" PointX="19.125" PointY="3.125" />
+        <EntityTypeShape EntityType="UVMESModel.UV_QRCODELINKVSLINECODE" Width="2" PointX="26.125" PointY="0.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_QRCODEMANAGEMENT" Width="2.25" PointX="13.5" PointY="25.25" />
+        <EntityTypeShape EntityType="UVMESModel.UV_LINEPROCESS" Width="2.25" PointX="22" PointY="33.125" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.UV_LINEPROCESS_HISTORY" Width="3.375" PointX="24.375" PointY="33" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.JIGH_CALDEVICES" Width="1.5" PointX="39" PointY="6.875" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.UV_DELETEBARCODE" Width="2" PointX="31.75" PointY="24.875" />
+        <EntityTypeShape EntityType="UVMESModel.UV_LINEERRORRECORD" Width="2.25" PointX="34.125" PointY="24.875" />
+        <EntityTypeShape EntityType="UVMESModel.UV_LINECAUSECODE" Width="1.5" PointX="26.375" PointY="16.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_LINECAUSEDEPT" Width="1.75" PointX="27.375" PointY="4.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_LINEERRORCODE" Width="2.375" PointX="29.375" PointY="4.75" />
+        <EntityTypeShape EntityType="UVMESModel.UV_LINEREPAIRHISTORY" Width="2.5" PointX="13.625" PointY="31" />
+        <EntityTypeShape EntityType="UVMESModel.UV_SMT_STD_OP_HISTORY" Width="3" PointX="33.75" PointY="0.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.UV_GROUP_PROCESS" Width="1.5" PointX="0.75" PointY="29.75" />
+        <EntityTypeShape EntityType="UVMESModel.JIGH_REPAIRHISTORY" Width="2.25" PointX="34.875" PointY="13.5" FillColor="255, 128, 255" />
+        <EntityTypeShape EntityType="UVMESModel.SMT_AOI_ERROR_RECORD" Width="2.125" PointX="31.375" PointY="0.75" FillColor="255, 192, 128" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_BCARDDATA" Width="2.25" PointX="18.25" PointY="38.375" FillColor="0, 192, 0" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_IMPORTQRCODE" Width="2.375" PointX="20.5" PointY="36.625" FillColor="0, 192, 0" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_QRCODELABEL" Width="2.125" PointX="20.625" PointY="39" FillColor="0, 192, 0" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_MODEL" Width="1.875" PointX="0.75" PointY="35.75" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_LOTCONTROL" Width="2" PointX="0.75" PointY="38.25" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_EASTECHPCBCODE" Width="2.125" PointX="3.125" PointY="35.75" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_EASTECHSERIALGENERAL" Width="2.625" PointX="3.125" PointY="38.875" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_EASTECHQRWIRELESS" Width="2.5" PointX="5.375" PointY="35.75" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_CAUSECODE" Width="1.875" PointX="6" PointY="38.875" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_DEFECTCODE" Width="1.875" PointX="8.375" PointY="35.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_DEPTCODE" Width="1.875" PointX="10.375" PointY="35.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_ERRORCODE" Width="1.875" PointX="10.125" PointY="38.875" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_REASONCODE" Width="1.875" PointX="8" PointY="38.875" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_REPAIRGENERALCODE" Width="2.5" PointX="6" PointY="41.5" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_REPAIRMODEL" Width="2.25" PointX="8.75" PointY="41.5" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_COM1" Width="1.625" PointX="11.25" PointY="41.5" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_CBSETTING" Width="2" PointX="12.375" PointY="35.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_CBSAVEDATA" Width="2" PointX="14.5" PointY="35.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_COM21" Width="2" PointX="13.125" PointY="41.5" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_COM2" Width="1.5" PointX="16.625" PointY="35.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_EASTECHHISTORY" Width="2.25" PointX="18.25" PointY="35.625" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_REPAIRHISTORY" Width="2.375" PointX="15.25" PointY="41.5" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_PCBTYPE" Width="1.875" PointX="0.875" PointY="42.125" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_REPAIREKEYIN" Width="2.125" PointX="17.75" PointY="41.5" FillColor="Lime" />
+        <EntityTypeShape EntityType="UVMESModel.UVASSY_CAUSECODEREPAIR" Width="2.375" PointX="3.125" PointY="42.75" FillColor="Lime" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

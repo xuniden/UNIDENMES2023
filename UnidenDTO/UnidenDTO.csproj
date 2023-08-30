@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC122AC0-F528-4D91-8C8C-E237B088C0B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnidenDTO</RootNamespace>
+    <AssemblyName>UnidenDTO</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssySamsungCauseCode.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssySamsungDepartment.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssySamsungErrorCode.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssySamsungRepair.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AssySamsungRepairCode.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_AssyOperatorProcessSetup.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_ATypePcb.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_EastechCheckResult.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_EastechEBChecker.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_EastechFCTCheck.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_EastechFCTMarkit.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_Eastech_Markit.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="A_OperatorProcessData.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Box_ETManager.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Box_IssueManage.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Box_ReturnManage.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EASTECH_ERROR_APPROVE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EASTECH_ERROR_LOG_APPROVE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EASTECH_PROGRAMHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EASTECH_SMT_OUTPUT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_BuyDeviceMonitor.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_DevicesManagement.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_DevicesTransaction.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IT_DevicesType.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIGH_CALDEVICES.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIGH_INOUT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIGH_LOCATION.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIGH_REPAIRHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_CALDEVICES.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_CALDEVICES_NEW.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_CALHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_CALTYPE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_INOUT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_LOCATION.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_REPAIRHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JIG_SECTION.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelName.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OUTSOURCE_ET_BOM.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutSource_ExportUVLotToDownload_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutSource_ExportUVLotToDownload_Result1.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutSource_ExportUVLotToDownload_Result2.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutSource_UVBOM_ETBOM_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutSource_UVBOM_ETBOM_Result1.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutSource_UVBOM_ETBOM_Result2.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OutSource_UVBOM_ETBOM_Result3.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OUTSOURCE_UVLotVsETOrder.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OUTSOURCE_UVPartsVsETParts.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OUTSOURCE_UV_BOM.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PcbType.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROGRAM.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROGRAMHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMT_AOI_ERROR_RECORD.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMT_LINE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMT_OUTPUT_MIS_MATERIAL.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMT_OUTSOURCE_IN_QTY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Smt_OutSource_Mrp_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMT_OUTSOURCE_ORDER_IMPORT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMT_OUTSOURCE_OUTHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMT_OUTSOURCE_OUTPUT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Smt_Repaire_DeptCause.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Smt_Repair_Bom.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Smt_Repair_Cause.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Smt_Repair_Error_Code.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Smt_Repair_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_EastechOutputHistory_SelectCheckByProkey_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_SmtHistory_ByProgram_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_SmtIPQCChecker_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Smt_CheckMistakeMaterial_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Smt_CombineProgramNonQRCode_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_Smt_CombineProgramQRCode_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_smt_output_searchBydate_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Staging_PcbList_GetAllByLot_Result.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_ButtonFunction.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_MenuFunction.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_UserButtonFunction.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_UserMenuFuction.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_Users.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLUSER.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EastechPCBCode.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EstechSerialGeneral.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EstechSerialGeneral_Tmp.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SessionLogin.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Sys_Division.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Sys_Section.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_BCARDDATA.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_CAUSECODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_CAUSECODEREPAIR.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_CBSAVEDATA.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_CBSETTING.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_COM1.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_COM2.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_COM21.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_DEFECTCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_DEPTCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_EASTECHHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_EASTECHPCBCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_EASTECHQRWIRELESS.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_EASTECHSERIALGENERAL.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_ERRORCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_IMPORTQRCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_LOTCONTROL.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_MODEL.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_PCBTYPE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_QRCODELABEL.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_REASONCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_REPAIREKEYIN.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_REPAIRGENERALCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_REPAIRHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVASSY_REPAIRMODEL.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UvDepartment.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UVModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UVModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UVModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="UV_DELETEBARCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_DEPT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_DIV.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_FACTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_GROUP_PROCESS.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_LINECAUSECODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_LINECAUSEDEPT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_LINEERRORCODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_LINEERRORRECORD.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_LINEPROCESS.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_LINEPROCESS_HISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_LINEREPAIRHISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_MODELLOTINFO.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_PRO_LINE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_QRCODELINKVSLINECODE.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_QRCODEMANAGEMENT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_SETUP_PROCESS.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_SMT_STD_OP_HISTORY.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_STAGING_INPUT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_STAGING_LOCATION.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_STAGING_OUTPUT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UV_STAGING_PCBLIST.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WHS_INPUT_IQC_RETURN.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WHS_IQC_INPUT_RETURN_RESULT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WHS_LOCATION.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WHS_MONITOR_FEDEX_DHL_OTHER.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WHS_PO_ERROR_KEYIN.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WHS_RECEIVING_INPUT.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WHS_TRANSFER_LOTTAG.cs">
+      <DependentUpon>UVModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="UVModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UVModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="UVModel.edmx.diagram">
+      <DependentUpon>UVModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UVModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UVModel.Context.cs</LastGenOutput>
+      <DependentUpon>UVModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="UVModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UVModel.edmx</DependentUpon>
+      <LastGenOutput>UVModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
